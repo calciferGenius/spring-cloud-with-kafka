@@ -1,10 +1,13 @@
 package com.sn.springcloudkafkaproducer.model;
 
+import lombok.Data;
+
 import javax.persistence.*;
 import java.util.Date;
 
 @Entity
 @Table(name = "sync_betorder_config")
+@Data
 public class SyncBetOrderConfig {
 
     @Id
