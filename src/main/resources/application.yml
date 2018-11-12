@@ -5,11 +5,15 @@ spring:
         binder:
           brokers: localhost:9092
       bindings:
-        greetings-in:
-          destination: greetings
-          contentType: application/json
         greetings-out:
           destination: greetings
           contentType: application/json
+        test-data-output:
+          destination: test_data_channel
+          contentType: application/json
 server:
   port: 9090
+
+  # spring.cloud.stream.bindings.<channelName>.
+  # destination --> The target destination of a channel on the bound middleware (e.g., the RabbitMQ exchange or Kafka topic).
+  #
