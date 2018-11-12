@@ -9,6 +9,10 @@ import org.springframework.messaging.support.MessageBuilder;
 import org.springframework.stereotype.Service;
 import org.springframework.util.MimeTypeUtils;
 
+/**
+ * Processor APP
+ *
+ */
 @Service
 @Slf4j
 public class SabaService {

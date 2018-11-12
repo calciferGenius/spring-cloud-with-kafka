@@ -11,8 +11,22 @@ spring:
         test-data-output:
           destination: test_data_channel
           contentType: application/json
+  jpa:
+    hibernate:
+      ddl-auto: create
+
+  datasource:
+    url: jdbc:mysql://192.168.10.145:3307/uniapi
+    username: dev
+    password: dev123
+    hikari:
+      connection-timeout: 30000
+      idle-timeout: 600000
+      max-lifetime: 1800000
+
 server:
   port: 9090
+
 
   # spring.cloud.stream.bindings.<channelName>.
   # destination --> The target destination of a channel on the bound middleware (e.g., the RabbitMQ exchange or Kafka topic).
