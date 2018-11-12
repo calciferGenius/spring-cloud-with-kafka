@@ -22,6 +22,9 @@ public class SabaSyncScheduler {
         } else {
             log.info("------------------------ sync config is empty --------------------------");
         }
+        //for updating sync config
+//        syncBetOrderConfig.setQueryString("20");
+//        syncBetOrderRepository.save(syncBetOrderConfig);
     }
 
 
