@@ -2,6 +2,7 @@ package com.sn.springcloudkafkaproducer.service;
 
 import com.sn.springcloudkafkaproducer.model.SabaBetData;
 import com.sn.springcloudkafkaproducer.stream.SabaStreams;
+import com.sn.springcloudkafkaproducer.utils.BaseCommunicate;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.messaging.MessageChannel;
 import org.springframework.messaging.MessageHeaders;
@@ -15,7 +16,7 @@ import org.springframework.util.MimeTypeUtils;
  */
 @Service
 @Slf4j
-public class SabaService {
+public class SabaService extends BaseCommunicate{
 
     private final SabaStreams sabaStreams;
 

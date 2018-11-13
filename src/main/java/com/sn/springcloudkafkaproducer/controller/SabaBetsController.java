@@ -35,7 +35,7 @@ public class SabaBetsController {
                     .loginname("claud")
                     .wagersDate(JodaDateUtils.convertDateToTimeStamp(new Date()))
                     .build();
-            betDataRepository.save(sabaBetData);
+            //betDataRepository.save(sabaBetData);
             sabaService.sendBetData(sabaBetData);
         }
 

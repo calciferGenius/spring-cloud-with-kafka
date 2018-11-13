@@ -6,4 +6,6 @@ import org.springframework.data.repository.CrudRepository;
 public interface SyncBetOrderRepository extends CrudRepository<SyncBetOrderConfig, Long> {
 
     public SyncBetOrderConfig findSyncBetOrderConfigByProviderIdAndPlatformId(Integer providerId, Integer platformId);
+
+    public SyncBetOrderConfig findSyncBetOrderConfigByProviderId(Integer providerId);
 }
